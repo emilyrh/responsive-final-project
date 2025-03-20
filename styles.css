@@ -63,10 +63,6 @@ p {
   padding: 120px 60px;
 }
 
-.content-container img {
-  border-radius: 10px;
-}
-
 .content h1 {
   font-size: 64px;
   line-height: 80px;
@@ -88,7 +84,6 @@ p {
 }
 
 .content {
-  text-align: center;
   margin: 30px;
 }
 
@@ -108,6 +103,39 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav h4 {
+  font-size: 34px;
+  margin-bottom: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--first-color);
+  opacity: 70%;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--third-color);
 }
 
 @media (max-width: 900px) {
@@ -132,5 +160,13 @@ p {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  nav h4 {
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 }
